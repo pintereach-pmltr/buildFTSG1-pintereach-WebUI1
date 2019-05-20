@@ -1,5 +1,6 @@
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,23 @@
 <body>
     <!-- NAV BAR-->
     <div class="header">
-        <img src="" alt="" class="menu-button">
+        <img src="assets/menu.png" alt="" class="menu-button">
+        <i class="fas fa-bookmark"></i>
         <h1>Pintereach</h1>
         <button>Log In</button>
         <a href="#">Home</a>
         <a href="#">About Us</a>
     <div class="menu">
         <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Log In</li>
+            <li>
+                <a href="#">Favorites</a>
+            </li>
+            <li>
+                <a href="#">Archive</a>
+            </li>
+            <li>
+                <a href="#">Log In</a>
+            </li>
         </ul>
     </div>
 
@@ -27,15 +35,18 @@
         <div class="topics">
             <span class="title">TOPICS:</span>
             <div data-tab="all" class="tab active-tab">ALL</div>
-            <div data-tab="javascript" class="tab">TECHNOLOGY</div>
-            <div data-tab="technology" class="tab">SPORTS</div>
-            <div data-tab="node" class="tab">LIFESTYLE</div>
-            <div data-tab="jquery" class="tab">FUNZIES</div>
+            <div data-tab="technology" class="tab">TECHNOLOGY</div>
+            <div data-tab="sports" class="tab">SPORTS</div>
+            <div data-tab="lifestyle" class="tab">LIFESTYLE</div>
+            <div data-tab="funzies" class="tab">FUNZIES</div>
         </div>
     </div>
 
     
-    <!-- CARDS COMPONENT-->
+    <!-- ARTICLES COMPONENT CONTAINER-->
+    <div class="articles-container"></div>
+
+    <!--ARTICLES-->
         
 
 
