@@ -8,40 +8,87 @@
     flex-wrap: wrap;
     align-items: center;
 
+    @media @mobile{
+        display: block;
+        text-align: center;
+        height:70rem;
+    }
+
     h1{
         font-size: 5rem;
         // align-items: center;
     }
 
+    @media @mobile{
+        border-bottom: 1px solid black;
+        // margin-bottom: 20px;
+    }
+
     .search{
        width: 15rem;
+
+       @media @mobile{
+        width:100%;
+        border-bottom: 1px solid black;
+        border-top:1px solid black;
+        margin-top:10px;
+    }
 
        p{
            margin-top: 20px;
        }
+
+      
     }
 
     .star{
         width: 15rem;
 
+        @media @mobile{
+            width:100%;
+            border-bottom: 1px solid black;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
         p{
             margin-top: 20px;
         }
+
     }
 
     .plus{
         width: 15rem;
 
+        @media @mobile{
+            width:100%
+        }
+
         p{
             margin-top: 20px;
+        }
+
+        @media @mobile{
+            border-bottom: 1px solid black;
         }
     }
 
     .square{
         width: 150px;
-    }
+
+        @media @mobile{
+            width:100%;
+            margin-top:20px;
+            margin-bottom: 20px;
+        }
+    
 
     p{
         margin-top:20px;
     }
+
+    @media @mobile{
+        border-bottom: 1px solid black;
+    }
+}
 }

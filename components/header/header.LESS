@@ -4,6 +4,10 @@ header{
     background-color: @primary-color;
     color: black;
     // height:50px;
+
+    @media @mobile{
+     
+    }
    
 
     .nav{
@@ -12,6 +16,13 @@ header{
         justify-content: space-between;
         width: 100%;
         height: 50px;
+
+        @media @mobile{
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+            
+        }
 
         .fa-bookmark{
         color: @secondary-color;
@@ -25,11 +36,12 @@ header{
         }
 
         h1{
-           
             // display: flex;
             // margin-right: 5rem;
             color: @secondary-color;
-            
+        }
+        @media @mobile{
+            border-bottom:1px solid black;
         }
         a{
             text-decoration: none;
@@ -40,13 +52,17 @@ header{
             color: @secondary-color;
             justify-content: flex-end;
         }
+        @media @mobile{
+            // font-size: 1px;
+        }
     
     .menu{
         
         .menu-button{
             background-color: @secondary-color;
-            // float: right;
-            
+        }
+        @media @mobile{
+            display: none;
         }
         
         ul{
