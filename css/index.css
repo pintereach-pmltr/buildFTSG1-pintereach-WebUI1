@@ -190,7 +190,7 @@ header .nav a {
   justify-content: space-evenly;
   margin-left: 5rem;
   color: #EF233C;
-  text-align: center;
+  justify-content: flex-end;
 }
 header .menu .menu-button {
   background-color: #EF233C;
@@ -215,6 +215,15 @@ header .menu a {
 .top-section p {
   font-size: 8rem;
   text-align: center;
+  color: #EF233C;
+}
+.top-section button {
+  margin-top: 100px;
+  font-size: 20px;
+  border-radius: 15px 15px 15px 15px;
+  width: 150px;
+  height: 100px;
+  background-color: #2B2D42;
   color: #EF233C;
 }
 .bottom-section {
