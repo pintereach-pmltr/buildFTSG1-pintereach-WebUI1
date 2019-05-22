@@ -245,13 +245,17 @@ header .nav .menu ul {
   justify-content: center;
 }
 .top-section .btn button {
-  margin-top: 50px;
-  font-size: 2rem;
-  border-radius: 15px;
-  width: 150px;
-  height: 100px;
-  background-color: #2B2D42;
+  background-color: #000024;
   color: #EF233C;
+  width: 15rem;
+  height: 6rem;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+.top-section .btn button:hover {
+  background-color: white;
+  color: #EF233C;
+  cursor: pointer;
 }
 .bottom-section {
   background-color: #2B2D42;
@@ -346,5 +350,4 @@ footer {
   color: #EF233C;
 }
 @media (max-width:500px) {
-  margin-top: 50px;
 }
