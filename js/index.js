@@ -6,12 +6,12 @@ let h2 = document.querySelectorAll('h2');
 h2.forEach(element1 => element1.addEventListener("click", e => {
     e.target.style.color = "white";
 }))
-console.log(h2);
+
 
 
 let name = document.querySelector('h1');
 name.addEventListener('hover', e => {
-    document.body.style.color = "white";
+    Element.body.style.color = "white";
 })
-console.log(name);
+
 

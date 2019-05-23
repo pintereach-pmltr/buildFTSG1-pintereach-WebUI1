@@ -1,10 +1,30 @@
-const toggleMenu = () => {
-    menu.classList.toggle('menu--open');
+class Menu{
+    constructor(element) {
+        this.element = document.querySelector('.menu');
+        this.button = document.querySelector('.menu-button');
+        this.content = this.element.querySelector('.menu-content');
+        this.button.addEventListener('click', () => this.toggleContent())
+    }
+    toggleContent(){
+        this.content.classList.toggle('menu-hidden');
+        
+    }
 }
 
-//create ref to menu class
-const menu = document.querySelector('.menu');
-//menu btn ref
-const menuButton = document.querySelector('.menu-button');
-//click handler and toggle
-menuButton.addEventListener('click', toggleMenu);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let menu = document.querySelector('.menu');
+menu = new Menu (menu);

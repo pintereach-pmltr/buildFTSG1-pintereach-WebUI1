@@ -187,6 +187,10 @@ header .nav .fa-bookmark {
   color: #EF233C;
   align-items: center;
 }
+header .nav .logo {
+  display: flex;
+  align-items: center;
+}
 header .nav h1 {
   color: #EF233C;
   float: left;
@@ -203,14 +207,12 @@ header .nav a {
   justify-content: flex-end;
   justify-content: center;
 }
-@media (max-width:500px) {
-}
 header .nav .menu-button {
   background-color: #EF233C;
   float: right;
 }
 @media (max-width:500px) {
-  header .nav {
+  header .nav .menu-button {
     display: none;
   }
 }
@@ -221,6 +223,9 @@ header .nav .menu ul li {
   text-align: center;
 }
 header .nav .menu .menu--open {
+  display: block;
+}
+.menu--open {
   display: block;
 }
 .top-section {
