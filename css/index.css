@@ -181,6 +181,11 @@ img {
   font-size: 20px;
   font-weight: bold;
 }
+@media (max-width:500px) {
+  .dropdown .dropdown-button {
+    display: none;
+  }
+}
 .dropdown .dropdown-content {
   width: 130px;
   position: absolute;
@@ -206,7 +211,6 @@ img {
 }
 .header-container {
   height: 70px;
-  border-bottom: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,7 +252,7 @@ header .nav h1 {
 }
 @media (max-width:500px) {
   header .nav {
-    border-bottom: 1px solid black;
+    padding-top: 10px;
   }
 }
 header .nav a {
@@ -257,6 +261,11 @@ header .nav a {
   color: #EF233C;
   justify-content: flex-end;
   justify-content: center;
+}
+@media (max-width:500px) {
+  header .nav a {
+    padding-top: 15px;
+  }
 }
 header .nav .menu-button {
   background-color: #EF233C;
@@ -333,7 +342,8 @@ header .nav .menu .menu-content .menu-hidden {
   }
 }
 .bottom-section .search {
-  width: 15rem;
+  width: 20rem;
+  margin-top: 10px;
 }
 @media (max-width:500px) {
   .bottom-section .search {
@@ -341,13 +351,16 @@ header .nav .menu .menu-content .menu-hidden {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     margin-top: 10px;
+    padding-top: 20px;
   }
 }
 .bottom-section .search p {
   margin-top: 20px;
+  line-height: 2.5rem;
 }
 .bottom-section .star {
-  width: 15rem;
+  width: 20rem;
+  margin-bottom: 20px;
 }
 @media (max-width:500px) {
   .bottom-section .star {
@@ -361,7 +374,7 @@ header .nav .menu .menu-content .menu-hidden {
   margin-top: 20px;
 }
 .bottom-section .plus {
-  width: 15rem;
+  width: 20rem;
 }
 @media (max-width:500px) {
   .bottom-section .plus {
@@ -377,13 +390,12 @@ header .nav .menu .menu-content .menu-hidden {
   }
 }
 .bottom-section .square {
-  width: 150px;
+  width: 20rem;
 }
 @media (max-width:500px) {
   .bottom-section .square {
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 20px;
   }
 }
 .bottom-section .square p {
