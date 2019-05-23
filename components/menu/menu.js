@@ -11,20 +11,5 @@ class Menu{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let menu = document.querySelector('.menu');
 menu = new Menu (menu);

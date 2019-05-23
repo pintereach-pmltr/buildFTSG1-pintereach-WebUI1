@@ -1,3 +1,26 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  @import '../Dropdown/Dropdown.less';
+
+
+
+
+  .header-container {
+    height: 70px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    .header {
+      height: 50px;
+    }
+  }
+
 header{
     width: 100%;
     border: 1px solid black;
@@ -9,6 +32,7 @@ header{
      
     }
    
+  
 
     .nav{
         display: flex;
@@ -21,7 +45,6 @@ header{
             display: flex;
             flex-direction: column;
             height: 150px;
-            
         }
 
         .fa-bookmark{
@@ -57,12 +80,12 @@ header{
             float: right;
 
             @media @mobile{
-                display: none;
+                // display: none;
             }
         }
     
     .menu{
-        display: none;
+        // display: none;
         
         ul{
             li{
@@ -70,11 +93,14 @@ header{
 
             }
         }
-        .menu--open{
+        .menu-content .menu-hidden{
             display: block;
         }
     }
+      
+      
 }
+  
 }
 
  

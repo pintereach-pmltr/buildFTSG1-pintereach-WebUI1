@@ -15,6 +15,8 @@
 </head>
 <body>
     <!-- NAV BAR-->
+
+
    <header>
        <div class="nav">
             <div class="logo">
@@ -23,16 +25,30 @@
             </div>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
-        <img src="/assets/menu.png" alt="" class="menu-button">
+        <!-- <img src="/assets/menu.png" alt="" class="menu-button">
+
         <div class="menu">
         <div class="menu-content menu-hidden">
             <ul>
-            <li class="menu-link">Favorites</li>
-            <li class="menu-link">Archive</li>
-            <li class="menu-link">Log In</li>
-        </ul>
-    </div>
+                <li class="menu-link">Favorites</li>
+                <li class="menu-link">Archive</li>
+                <li class="menu-link">Log In</li>
+            </ul>
         </div>
+        </div> -->
+        <script defer="defer" src="./components/Dropdown/Dropdown.js"></script>
+            
+        <div class="header-container">
+                <div class="dropdown">
+                    <div class="dropdown-button">Menu</div>
+                    <div class="dropdown-content dropdown-hidden">
+                        <a class="dropdown-link" href="https://lambdaschool.com/" target="_blank">Favorites</a>
+                        <a class="dropdown-link" href="https://www.google.com/" target="_blank">Archive</a>
+                        <a class="dropdown-link" href="https://developer.mozilla.org/en-US/" target="_blank">Log In</a>
+                    </div>
+                </div>
+        </div>
+
     </div>
     </header>
 
