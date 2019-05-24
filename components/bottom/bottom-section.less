@@ -1,0 +1,122 @@
+.bottom-section{
+    background-color: @primary-color;
+    color: @secondary-color;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 50%;
+    padding:0 50px;
+
+    @media @mobile{
+       flex-direction: column;
+        text-align: center;
+        height: 650px;
+        justify-content: start;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    @media @mobile{
+        border-bottom: 1px solid black;
+    }
+
+    .bottom-section1{
+        flex-direction: column;
+        display: flex;
+
+        @media @mobile{
+            flex-direction: row;
+        }
+        .icons{
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: row;
+            padding: 15px 0px;
+
+            @media @mobile{
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+            }
+            i{
+                width:25%;
+            }
+        }
+        .para{
+            display:flex;
+            flex-direction: row;
+            
+            @media @mobile{
+                flex-direction: column;
+                
+            }
+        }
+
+            p{
+                margin-right: 10px;
+                margin-left: 10px;
+                width: 25%;
+
+                @media @mobile{
+                    width: 100%;
+                }
+            }
+        }
+    
+
+    .search{
+       width: 20rem;
+       margin-top:10px;
+
+      
+    }
+
+       p{
+           margin-right: 10px;
+           margin-left: 10px;
+           margin-top: 20px;
+           line-height: 2.5rem;
+       }
+
+      
+    
+
+    .star{
+        width: 20rem;
+        margin-bottom:20px;
+
+     
+
+        p{
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+
+    }
+
+    .plus{
+        width: 20rem;
+
+       
+
+        p{
+            margin-top: 20px;
+        }
+
+      
+    }
+
+    .square{
+        width: 20rem;
+
+    
+
+    p{
+        margin-top:20px;
+    }
+
+}
