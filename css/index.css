@@ -376,7 +376,7 @@ header .nav .menu .menu-content .menu-hidden {
 @media (max-width:500px) {
   .bottom-section .bottom-section1 .icons {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 }
 .bottom-section .bottom-section1 i {
