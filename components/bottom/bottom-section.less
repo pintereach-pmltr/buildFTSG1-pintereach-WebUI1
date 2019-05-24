@@ -9,9 +9,9 @@
     padding:0 50px;
 
     @media @mobile{
-        display: block;
+       flex-direction: column;
         text-align: center;
-        height:70rem;
+        
     }
 
     h1{
@@ -27,11 +27,21 @@
     .bottom-section1{
         flex-direction: column;
         display: flex;
+
+        @media @mobile{
+            flex-direction: row;
+        }
         .icons{
             justify-content: space-evenly;
             display: flex;
             flex-direction: row;
             padding: 15px 0px;
+
+            @media @mobile{
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            }
             i{
                 width:25%;
             }
@@ -39,25 +49,30 @@
         .para{
             display:flex;
             flex-direction: row;
+            
+            @media @mobile{
+                flex-direction: column;
+                
+            }
+        }
 
             p{
                 margin-right: 10px;
                 margin-left: 10px;
                 width: 25%;
+
+                @media @mobile{
+                    width: 100%;
+                }
             }
         }
-    }
+    
 
     .search{
        width: 20rem;
        margin-top:10px;
 
-       @media @mobile{
-        width:100%;
-        border-bottom: 1px solid black;
-        border-top:1px solid black;
-        margin-top:10px;
-        padding-top:20px;
+      
     }
 
        p{
@@ -68,19 +83,14 @@
        }
 
       
-    }
+    
 
     .star{
         // padding-top:10px;
         width: 20rem;
         margin-bottom:20px;
 
-        @media @mobile{
-            width:100%;
-            border-bottom: 1px solid black;
-            margin-bottom: 20px;
-            margin-top: 20px;
-        }
+     
 
         p{
             margin-right: 10px;
@@ -93,35 +103,22 @@
     .plus{
         width: 20rem;
 
-        @media @mobile{
-            width:100%
-        }
+       
 
         p{
             margin-top: 20px;
         }
 
-        @media @mobile{
-            border-bottom: 1px solid black;
-        }
+      
     }
 
     .square{
         width: 20rem;
 
-        @media @mobile{
-            width:100%;
-            margin-top:20px;
-            // margin-bottom: 20px;
-        }
     
 
     p{
         margin-top:20px;
     }
 
-    @media @mobile{
-        border-bottom: 1px solid black;
-    }
-}
 }

@@ -7,11 +7,10 @@
     text-align: center;
     height: 50%;
 
-    h1{
-        font-size: 10rem;
-        text-align: center;
-        color: @secondary-color;
+    @media @mobile{
+
     }
+
 
     .top-text{
         display:flex;
@@ -21,12 +20,17 @@
         height: 10rem;
         padding-top: 35px;
         background-color: rgba(0%, 0%, 0%, 40%);
+
+        @media @mobile{
+            flex-direction: column; 
+            height: 23rem;     
+         }
         h2{
             font-size: 3rem;
             text-align: center;
             color: white;
-            margin-bottom: 30px;
-            padding-right:30px;
+            margin-bottom: 3rem;
+            padding-right:3rem;
     }
 }
 
@@ -43,7 +47,12 @@
             border: none;
             border-radius: 5px;
             margin-top: 40px;
-            font-size: 20px;
+            font-size: 2rem;
+
+            @media @mobile{
+                margin-top: 70px;
+                width: 30rem;
+            }
         }
     }
 }
